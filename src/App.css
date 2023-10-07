@@ -1,38 +1,117 @@
-.App {
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-image: linear-gradient(rgb(150, 184, 248),pink,rgb(249, 233, 249));
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: cursive;
+}
+
+.head
+{
   text-align: center;
+  font-size: 50px;
+  text-shadow: 5px 3px 4px white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form
+{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.inputArea
+{
+  display: flex;
+  align-items: center;
+  line-height: 80px;
+  margin-bottom: 10px;
+}
+#name
+{
+  margin-left: 53px;
+}
+#rating
+{
+  margin-left: 51px;
+}
+.input
+{
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.input:focus
+{
+  background-color: rgb(227, 248, 248);
+}
+.span
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn
+{
+  width: 380px;
+  height: 50px;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, blue,green,yellow);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn:hover
+{
+  background-image: linear-gradient(to left,black,cyan,red);
+  color: blue;
+}
+
+/* child component css */
+
+.allCenter
+{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.array
+{
+  border: 5px solid black;
+  background-color: rgb(249, 246, 246);
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.arrayData
+{
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: darkcyan;
+  min-width:530px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.whole
+{
+  display: flex;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
